@@ -2,7 +2,7 @@
 /* *************************************************************** */
 /* Parameters */
 /* *************************************************************** */
-param location string = 'australiaeast'
+param location string = 'eastus2'
 
 param name string = 'ai-${uniqueString(resourceGroup().id)}'
 
@@ -27,7 +27,7 @@ var openAiSettings = {
     }
     sku: {
       name: 'Standard'
-      capacity: 300
+      capacity: 100
     }
   }
   completionsModel: {
@@ -38,7 +38,7 @@ var openAiSettings = {
     }
     sku: {
       name: 'Standard'
-      capacity: 300
+      capacity: 100
     }
   }
   embeddingsModel: {
@@ -49,7 +49,7 @@ var openAiSettings = {
     }
     sku: {
       name: 'Standard'
-      capacity: 300
+      capacity: 100
     }
   }
   dalleModel: {
