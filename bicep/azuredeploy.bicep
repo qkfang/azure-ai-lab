@@ -27,7 +27,7 @@ var openAiSettings = {
     }
     sku: {
       name: 'Standard'
-      capacity: 100
+      capacity: 50
     }
   }
   completionsModel: {
@@ -38,7 +38,7 @@ var openAiSettings = {
     }
     sku: {
       name: 'Standard'
-      capacity: 100
+      capacity: 50
     }
   }
   embeddingsModel: {
@@ -49,7 +49,7 @@ var openAiSettings = {
     }
     sku: {
       name: 'Standard'
-      capacity: 100
+      capacity: 50
     }
   }
   dalleModel: {
@@ -148,26 +148,26 @@ resource openAiCompletionsModelDeployment 'Microsoft.CognitiveServices/accounts/
 }
 
 
-resource openAiDalleModelDeployment 'Microsoft.CognitiveServices/accounts/deployments@2023-05-01' = {
-  parent: openAiAccount
-  name: openAiSettings.dalleModel.deployment.name
-  dependsOn: [
-    openAiEmbeddingsModelDeployment
-    openAiCompletionsModelDeployment
-    openAiGpt4oModelDeployment
-  ]
-  sku: {
-    name: openAiSettings.dalleModel.sku.name
-    capacity: openAiSettings.dalleModel.sku.capacity
-  }
-  properties: {
-    model: {
-      format: 'OpenAI'
-      name: openAiSettings.dalleModel.name
-      version: openAiSettings.dalleModel.version
-    }    
-  }
-}
+// resource openAiDalleModelDeployment 'Microsoft.CognitiveServices/accounts/deployments@2023-05-01' = {
+//   parent: openAiAccount
+//   name: openAiSettings.dalleModel.deployment.name
+//   dependsOn: [
+//     openAiEmbeddingsModelDeployment
+//     openAiCompletionsModelDeployment
+//     openAiGpt4oModelDeployment
+//   ]
+//   sku: {
+//     name: openAiSettings.dalleModel.sku.name
+//     capacity: openAiSettings.dalleModel.sku.capacity
+//   }
+//   properties: {
+//     model: {
+//       format: 'OpenAI'
+//       name: openAiSettings.dalleModel.name
+//       version: openAiSettings.dalleModel.version
+//     }    
+//   }
+// }
 
 /* *************************************************************** */
 /* Logging and instrumentation */

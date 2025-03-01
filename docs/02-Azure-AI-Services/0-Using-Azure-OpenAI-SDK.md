@@ -16,7 +16,7 @@ mkdir openai-nodejs
 cd openai-nodejs
 ```
 
-![alt text](images/creatfolder.png)
+<!-- ![alt text](images/creatfolder.png) -->
 
 2. Run the following command to create a new Node.js project:
 
