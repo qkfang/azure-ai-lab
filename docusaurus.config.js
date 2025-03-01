@@ -11,7 +11,7 @@ const config = {
   title: "Azure AI Lab",
   tagline:
     "Accelerate Your AI Journey: Learn the Basics of AI and Build Your First AI App",
-  url: "https://azure-ai-lab.io/",
+  url: "https://qkfang.github.io/",
   baseUrl: "/azure-ai-lab/",
 
   onBrokenLinks: "ignore",
