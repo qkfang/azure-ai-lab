@@ -10,7 +10,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "Azure AI Lab",
   tagline:
-    "Accelerate Your AI Journey: Learn the Basics of AI and Build Your First AI App",
+    "Accelerate Your AI Journey: Explore Azure AI Services",
   url: "https://qkfang.github.io/",
   baseUrl: "/azure-ai-lab/",
 
@@ -56,10 +56,10 @@ const config = {
       },
 
       navbar: {
-        title: "Learn the Basics of AI and Build Your First AI App",
+        title: "Explore Azure AI Services",
         logo: {
-          alt: "Workshop: Learn the Basics of AI and Build Your First AI App",
-          src: "img/logo-ws3.png",
+          alt: "Workshop: Explore Azure AI Services",
+          src: "img/logo.png",
         },
         items: [
           {
