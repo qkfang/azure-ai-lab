@@ -11,7 +11,7 @@
 		"openFiles": []
 	  },
 	  "vscode": {
-		"extensions": [,
+		"extensions": [
 		  "github.copilot-chat",
 		  "github.copilot",
 		  "ms-azuretools.vscode-azureappservice",
