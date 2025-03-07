@@ -8,10 +8,10 @@ In this lab, you will learn how to use the Azure OpenAI SDK to interact with Azu
 
 ## Setup Node.js project
 
-1. Open `Terminal` in VS code. **Create** a new directory `labs/01-LAB-01/7-Using-Azure-OpenAI-SDK/openai-nodejs` and navigate to the directory:
+1. Open `Terminal` in VS code. **Create** a new directory `labs/openai-sdk/openai-nodejs` and navigate to the directory:
 
 ```bash
-cd labs/01-LAB-01/7-Using-Azure-OpenAI-SDK
+cd labs/openai-sdk/
 mkdir openai-nodejs
 cd openai-nodejs
 ```
@@ -37,7 +37,7 @@ npm install @azure/openai@1.0.0-beta.11
 const { OpenAIClient, AzureKeyCredential } = require("@azure/openai");
 ```
 
-5. Create the Azure OpenAI client to call the Azure OpenAI Chat completion API. Have a look at Azure OpenAI service endpoint and Azure OpenAI service key in the code below. Azure OpenAI service endpoint is in the format of `https://<AZURE_OPENAI_API_INSTANCE_NAME>.openai.azure.com/`, for example, `https://azure-ai-labopenai.openai.azure.com`. If not sure about the value of AZURE_OPENAI_API_INSTANCE_NAME, please refer to `Lab Setup` step.
+5. Create the Azure OpenAI client to call the Azure OpenAI Chat completion API. Have a look at Azure OpenAI service endpoint and Azure OpenAI service key in the code below. Azure OpenAI service endpoint is in the format of `https://<AZURE_OPENAI_API_INSTANCE_NAME>.openai.azure.com/`, for example, `https://azureailab-openai.openai.azure.com`. If not sure about the value of AZURE_OPENAI_API_INSTANCE_NAME, please refer to `Lab Setup` step.
 
 Then copy below Javascript code into `app.js`.
 

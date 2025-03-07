@@ -95,7 +95,7 @@ Complete the `seoApi` function to send a website url and receive a structured js
                 api_version: "2024-08-01-preview"
             };
 
-            var openai_url = "https://azure-ai-labopenai.openai.azure.com";
+            var openai_url = "https://azureailab-openai.openai.azure.com";
             var openai_key = "<API_KEY>";
             const client = new OpenAIClient(
                 openai_url,

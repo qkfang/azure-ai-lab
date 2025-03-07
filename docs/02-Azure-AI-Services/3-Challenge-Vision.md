@@ -98,7 +98,7 @@ Complete the `visionApi` function to send a user prompt together with a uploaded
                 api_version: "2024-08-01-preview"
             };
 
-            var openai_url = "https://azure-ai-labopenai.openai.azure.com";
+            var openai_url = "https://azureailab-openai.openai.azure.com";
             var openai_key = "<API_KEY>";
             const client = new OpenAIClient(
                 openai_url,

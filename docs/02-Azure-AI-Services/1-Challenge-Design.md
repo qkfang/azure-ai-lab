@@ -82,7 +82,7 @@ Complete the `dalleApi` function to send a prompt and receive a generated image.
             const size = '1024x1024';
             const n = 1;
             
-            var openai_url = "https://azure-ai-labopenai.openai.azure.com";
+            var openai_url = "https://azureailab-openai.openai.azure.com";
             var openai_key = "<API_KEY>";
             const client = new OpenAIClient(
                 openai_url,

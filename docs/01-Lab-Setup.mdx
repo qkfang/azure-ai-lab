@@ -16,10 +16,6 @@ https://github.com/azure-ai-lab/azure-ai-lab
 
 The Azure Resources required for the labs have already been provisioned.
 
-The details of the shared Azure resources are provided in the table below. You will need these details to connect to the Azure services during the labs.
-
-If you have an Azure Subscription, you can provision these resources yourself using the instructions and `bicep` files provided on the `Azure Deployment Guide` page. However, this is optional.
-
 You can also create a free Azure account with $200 credit to use on Azure services within 30 days. If you are a Visual Studio subscriber, you can activate monthly Azure credits. Refer to the links below for more information.
 
 https://azure.microsoft.com/en-au/pricing/purchase-options/azure-account?icid=azurefreeaccount
@@ -30,17 +26,17 @@ https://azure.microsoft.com/en-au/pricing/member-offers/credit-for-visual-studio
 
 | Description          | Value                                                  |
 | -------------------- | ------------------------------------------------------ |
-| AI Proxy Playground  | https://azure-ai-labplayground.azurewebsites.net |
-| Azure OpenAI API Key | a30df7e6e63f424884fde2f86b2624b5                       |
+| AI Proxy Playground  | https://azureailab-proxy.azurewebsites.net/ |
+| Azure OpenAI API Key | 9704ddf46e03414ca72ae6f48a6eb56b                       |
 
 ### Azure OpenAI Resource Configuration
 
 | Variable Name                               | Value                                             |
 | ------------------------------------------- | ------------------------------------------------- |
-| AZURE_OPENAI_API_INSTANCE_NAME              | azure-ai-labopenai                          |
-| AZURE_OPENAI_API_ENDPOINT                   | https://azure-ai-labopenai.openai.azure.com/ |
-| AZURE_OPENAI_API_KEY                        | a30df7e6e63f424884fde2f86b2624b5                  |
-| AZURE_OPENAI_API_DEPLOYMENT_NAME            | completions                                       |
+| AZURE_OPENAI_API_INSTANCE_NAME              | azureailab-openai                          |
+| AZURE_OPENAI_API_ENDPOINT                   | https://azureailab-openai.openai.azure.com/ |
+| AZURE_OPENAI_API_KEY                        | 9704ddf46e03414ca72ae6f48a6eb56b                  |
+| AZURE_OPENAI_API_DEPLOYMENT_NAME            | gpt-4o                                       |
 | AZURE_OPENAI_API_EMBEDDINGS_DEPLOYMENT_NAME | embeddings                                        |
 | AZURE_OPENAI_API_VERSION                    | 2023-09-01-preview                                |
 
@@ -49,8 +45,8 @@ https://azure.microsoft.com/en-au/pricing/member-offers/credit-for-visual-studio
 
 | Resource Name              | Endpoint | Key |
 | ------------- | ------------- | ------------- |
-| GPT-4o | https://azure-ai-labopenai.openai.azure.com/openai/deployments/gpt4o/chat/completions?api-version=2024-08-01-preview | a30df7e6e63f424884fde2f86b2624b5 (deploymentName: gpt4o) |
-| Dall-e 3 | https://azure-ai-labopenai.openai.azure.com/openai/deployments/dalle3/images/generations?api-version=2024-02-01 | a30df7e6e63f424884fde2f86b2624b5 (deploymentName: dalle3) |
+| GPT-4o | https://azureailab-openai.openai.azure.com/openai/deployments/gpt-4o/chat/gpt-4o?api-version=2024-08-01-preview | 9704ddf46e03414ca72ae6f48a6eb56b (deploymentName: gpt-4o) |
+| Dall-e 3 | https://azureailab-openai.openai.azure.com/openai/deployments/dalle-3/images/generations?api-version=2024-02-01 | 9704ddf46e03414ca72ae6f48a6eb56b (deploymentName: dalle-3) |
 | Computer Vision | https://azure-ai-labcv.cognitiveservices.azure.com/ | 786639364fd04642b86ae805c72c43f6 |
 | Translator Service | https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&to=xx&from=xx | 8a2c06f38dc2447da606bfe49bd78db1 |
 | Speech Service | https://eastus.api.cognitive.microsoft.com/ | 274f545088c54f689ef7c04496488864 (region: eastus) |

@@ -6,7 +6,7 @@
             "value": "azureailab"
         },
         "location": { 
-            "value": "eastus2"
+            "value": "eastus"
         },
         "openAiSku": {
             "value": "S0"
