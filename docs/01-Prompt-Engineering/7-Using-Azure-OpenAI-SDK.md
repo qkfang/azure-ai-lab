@@ -8,10 +8,9 @@ In this lab, you will learn how to use the Azure OpenAI SDK to interact with Azu
 
 ## Setup Node.js project
 
-1. Open `Terminal` in VS code. **Create** a new directory `labs/openai-sdk/openai-nodejs` and navigate to the directory:
+1. Open `Terminal` in VS code. **Create** a new directory `openai-nodejs` and navigate to the directory:
 
 ```bash
-cd labs/openai-sdk/
 mkdir openai-nodejs
 cd openai-nodejs
 ```

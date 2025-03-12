@@ -36,6 +36,7 @@ const config = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
+          exclude: ['**/02-Azure-AI-Services/**'],
         },
         blog: false,
         theme: {

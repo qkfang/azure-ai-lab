@@ -2,7 +2,7 @@
 /* *************************************************************** */
 /* Parameters */
 /* *************************************************************** */
-param location string = 'eastus2'
+param location string = 'eastus'
 
 param name string = 'ai-${uniqueString(resourceGroup().id)}'
 
@@ -23,22 +23,11 @@ var openAiSettings = {
     name: 'gpt-4o'
     version: '2024-05-13'
     deployment: {
-      name: 'gpt4o'
+      name: 'gpt-4o'
     }
     sku: {
       name: 'Standard'
-      capacity: 50
-    }
-  }
-  completionsModel: {
-    name: 'gpt-4o'
-    version: '2024-05-13'
-    deployment: {
-      name: 'completions'
-    }
-    sku: {
-      name: 'Standard'
-      capacity: 50
+      capacity: 200
     }
   }
   embeddingsModel: {
@@ -56,7 +45,7 @@ var openAiSettings = {
     name: 'dall-e-3'
     version: '3.0'
     deployment: {
-      name: 'dalle3'
+      name: 'dalle-3'
     }
     sku: {
       name: 'Standard'
@@ -78,6 +67,19 @@ var appServiceSettings = {
 /* *************************************************************** */
 /* Azure OpenAI */
 /* *************************************************************** */
+
+resource azureAiAccount 'Microsoft.CognitiveServices/accounts@2023-05-01' = {
+  name: '${name}-aisvc'
+  location: location
+  sku: {
+    name: openAiSettings.sku    
+  }
+  kind: 'AIServices'
+  properties: {
+    customSubDomainName: '${name}-aisvc'
+    publicNetworkAccess: 'Enabled'
+  }
+}
 
 resource openAiAccount 'Microsoft.CognitiveServices/accounts@2023-05-01' = {
   name: openAiSettings.name
@@ -127,47 +129,25 @@ resource openAiGpt4oModelDeployment 'Microsoft.CognitiveServices/accounts/deploy
   }
 }
 
-resource openAiCompletionsModelDeployment 'Microsoft.CognitiveServices/accounts/deployments@2023-05-01' = {
+resource openAiDalleModelDeployment 'Microsoft.CognitiveServices/accounts/deployments@2023-05-01' = {
   parent: openAiAccount
-  name: openAiSettings.completionsModel.deployment.name
+  name: openAiSettings.dalleModel.deployment.name
   dependsOn: [
     openAiEmbeddingsModelDeployment
     openAiGpt4oModelDeployment
   ]
   sku: {
-    name: openAiSettings.completionsModel.sku.name
-    capacity: openAiSettings.completionsModel.sku.capacity
+    name: openAiSettings.dalleModel.sku.name
+    capacity: openAiSettings.dalleModel.sku.capacity
   }
   properties: {
     model: {
       format: 'OpenAI'
-      name: openAiSettings.completionsModel.name
-      version: openAiSettings.completionsModel.version
+      name: openAiSettings.dalleModel.name
+      version: openAiSettings.dalleModel.version
     }    
   }
 }
-
-
-// resource openAiDalleModelDeployment 'Microsoft.CognitiveServices/accounts/deployments@2023-05-01' = {
-//   parent: openAiAccount
-//   name: openAiSettings.dalleModel.deployment.name
-//   dependsOn: [
-//     openAiEmbeddingsModelDeployment
-//     openAiCompletionsModelDeployment
-//     openAiGpt4oModelDeployment
-//   ]
-//   sku: {
-//     name: openAiSettings.dalleModel.sku.name
-//     capacity: openAiSettings.dalleModel.sku.capacity
-//   }
-//   properties: {
-//     model: {
-//       format: 'OpenAI'
-//       name: openAiSettings.dalleModel.name
-//       version: openAiSettings.dalleModel.version
-//     }    
-//   }
-// }
 
 /* *************************************************************** */
 /* Logging and instrumentation */
