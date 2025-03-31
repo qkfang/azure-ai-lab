@@ -36,6 +36,7 @@ const config = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
+          exclude: ['**/01-Prompt-Engineering/**'],
         },
         blog: false,
         theme: {
