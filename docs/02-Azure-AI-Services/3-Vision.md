@@ -59,14 +59,14 @@ const Page = () => {
         };
 
         var openai_url = "https://azureailab-openai.openai.azure.com";
-        var openai_key = "<API_KEY>";
+        var openai_key = "9704ddf46e03414ca72ae6f48a6eb56b";
         const client = new OpenAIClient(
             openai_url,
             new AzureKeyCredential(openai_key),
             options
         );
         // ?api-version=2023-12-01-preview
-        const deploymentName = 'gpt4o';
+        const deploymentName = 'gpt-4o';
         const result = await client.getChatCompletions(deploymentName, messages, {
             maxTokens: 200,
             temperature: 0.25

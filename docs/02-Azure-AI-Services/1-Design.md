@@ -41,14 +41,14 @@ const Page = () => {
         const n = 1;
         
         var openai_url = "https://azureailab-openai.openai.azure.com";
-        var openai_key = "<API_KEY>";
+        var openai_key = "9704ddf46e03414ca72ae6f48a6eb56b";
         const client = new OpenAIClient(
             openai_url,
             new AzureKeyCredential(openai_key),
             options
         );
 
-        const deploymentName = 'dalle3';
+        const deploymentName = 'dalle-3';
         const result = await client.getImages(deploymentName, prompt, { n, size });
         console.log(result);
 

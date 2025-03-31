@@ -24,7 +24,7 @@ const Page = () => {
     const speechConfig = React.useRef(null);
 
     useEffect(() => {
-        const speech_key = '<API_KEY>';
+        const speech_key = '843fc486ceb047129d416be20e57073b';
         speechConfig.current = sdk.SpeechConfig.fromSubscription(
             speech_key,
             'eastus'
@@ -42,7 +42,7 @@ const Page = () => {
             trackPromise(
                 speechApi(speechText)
             ).then((res) => {
-                setTranslatedText(res);
+                
             }
             )
         }
