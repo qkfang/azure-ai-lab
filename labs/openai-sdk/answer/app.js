@@ -6,11 +6,11 @@ const client = new OpenAIClient(
 );
 
 // code block from earlier step
-//   const chatResponse = client.getChatCompletions("completions", [
+//   const chatResponse = client.getChatCompletions("gpt-4o", [
 //     { role: "user", content: "What are the different types of road bikes?" },
 //   ]);
 
-//   const chatResponse = client.getChatCompletions("completions", [
+//   const chatResponse = client.getChatCompletions("gpt-4o", [
 //     {
 //       role: "system",
 //       content:
@@ -20,7 +20,7 @@ const client = new OpenAIClient(
 //   ]);
 
 // code block from earlier step
-// const chatResponse = client.getChatCompletions("completions", [
+// const chatResponse = client.getChatCompletions("gpt-4o", [
 //     {
 //         role: "system",
 //         content:
@@ -79,7 +79,7 @@ const options = {
     ],
 };
 
-const chatResponse = client.getChatCompletions("completions", [
+const chatResponse = client.getChatCompletions("gpt-4o", [
     {
         role: "system",
         content:

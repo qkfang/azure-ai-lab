@@ -54,7 +54,7 @@ More information on the Azure OpenAI client methods can be found in the [@azure/
 5. Once the Azure OpenAI client has been created, the next step is to call the `.getCompletions` method on the client to perform a chat completion.
 
 ```javascript
-const chatResponse = client.getChatCompletions("completions", [
+const chatResponse = client.getChatCompletions("gpt-4o", [
   { role: "user", content: "What are the different types of road bikes?" },
 ]);
 ```
@@ -84,7 +84,7 @@ Try the other examples in the next sections to see how you can interact with Azu
 You can set the system message to provide context to the conversation. The system message can be set using the `role: "system"`. If you see an error saying `variable already exists or defined`, please replace the code in earlier step with new code block.
 
 ```javascript
-const chatResponse = client.getChatCompletions("completions", [
+const chatResponse = client.getChatCompletions("gpt-4o", [
   {
     role: "system",
     content:
@@ -99,7 +99,7 @@ const chatResponse = client.getChatCompletions("completions", [
 You can send previous chat history to the model as part of the conversation. This can help the model provide more accurate responses.
 
 ```javascript
-const chatResponse = client.getChatCompletions("completions", [
+const chatResponse = client.getChatCompletions("gpt-4o", [
   {
     role: "system",
     content:
@@ -163,7 +163,7 @@ const options = {
     ],
 };
 
-const chatResponse = client.getChatCompletions("completions", [
+const chatResponse = client.getChatCompletions("gpt-4o", [
     {
         role: "system",
         content:
