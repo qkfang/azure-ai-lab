@@ -4,7 +4,7 @@ title: "SEO"
 
 Develop a feature to download a specific web page, convert html to text and summarise it.
 
-There is a `SEO` page located here (`apps\web\pages\seo\Seo.tsx`) on the website. The page has an input textbox for a url, and a button to invoke AI Service and get back a generated SEO content. Use `http://<codespaces_url>/product.html` for testing (replace <codespaces_url> with actual url of the codespaces website)
+There is a `SEO` page located here (`apps\web\pages\seo\Seo.tsx`) on the website. The page has an input textbox for a url, and a button to invoke AI Service and get back a generated SEO content. Use `http://codespaces_url/product.html` for testing (replace `codespaces_url` with actual url of the codespaces website)
 
 1- Navigate to the page via `Explorer` and click the file to open it in the editor.
 
@@ -80,7 +80,7 @@ const Page = () => {
     return (
         <div className="pageContainer">
             <h2>SEO</h2>
-            <p>Sample product page is here: http://<codespaces_url>/product.html
+            <p>Sample product page is here: http://codespaces_url/product.html
             </p>
             <p>
                 <input type="text" placeholder="(enter url)" onChange={updateText} />
