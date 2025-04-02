@@ -2,11 +2,13 @@
 title: "Translation"
 ---
 
-Leverage translation services and the GPT-4o model to interpret customer feedback across various languages, enabling efficient summarization and in-depth analysis for data-driven decision-making.​
+Leverage translation services and the GPT-4o model to interpret customer feedback across various languages.
 
-There is a `Translation` page (`apps\web\pages\translation\Translation.tsx`) on chatbot. The page has an input textbox for user review, and a button to invoke AI Service and get back translated review.
+There is a `Translation` page located here(`apps\web\pages\translation\Translation.tsx`) on the website. The page has an input textbox for user review, and a button to invoke AI Service and get back translated review.
 
-Open above page in `VS Code` and replace the whole file with below code. 
+1- Navigate to the page via `Explorer` and click the file to open it in the editor.
+
+2- Replace all text in the file with below code. 
 
 ```
 import React, { useState } from "react";
@@ -82,6 +84,6 @@ export default Page;
 
 ```
 
-Once copied, the web page in the browser should auto refresh, please test out the function!
+3- Once copied, the web page in the browser should auto refresh, please test out the function.
 
-Feel free to expand on it to make it more interesting!
+4- Feel free to expand on it to make it more interesting!

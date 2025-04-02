@@ -4,9 +4,11 @@ title: "Speech"
 
 Invoke Azure Speech service to read out text content in voice (text to speech).
 
-There is a `Speech` page (`apps\web\pages\speech\Speech.tsx`) on chatbot. The page has an input textbox for text content, and a button to invoke AI Service and play voice output.
+There is a `Speech` page located here (`apps\web\pages\speech\Speech.tsx`) on the website. The page has an input textbox for text content, and a button to invoke AI Service and play voice output.
 
-Open above page in `VS Code` and replace the whole file with below code. 
+1- Navigate to the page via `Explorer` and click the file to open it in the editor.
+
+2- Replace all text in the file with below code. 
 
 ```
 
@@ -91,6 +93,6 @@ export default Page;
 
 ```
 
-Once copied, the web page in the browser should auto refresh, please test out the function!
+3- Once copied, the web page in the browser should auto refresh, please test out the function.
 
-Feel free to expand on it to make it more interesting!
+4- Feel free to expand on it to make it more interesting!

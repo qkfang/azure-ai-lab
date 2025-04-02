@@ -4,7 +4,7 @@ title: Run Website
 
 Follow the steps below to set up the lab environment using GitHub Codespaces:
 
-1. Create a GitHub Account ff you don't have a one, you can create one [here](https://github.com/join).
+1. Create a GitHub Account if you don't have one already, you can join [here](https://github.com/join).
 
 2. Navigate to the [Azure AI Lab](https://github.com/qkfang/azure-ai-lab) repository in browser. Click on the green `Code` button and select `Codespaces` tab. If you don't see this option, ensure you have logged into your account in browser.
 
@@ -26,7 +26,7 @@ cd apps/web
 npm install
 ```
 
-8. Run the webiste by running below command
+8. Run the website by running below command
 
 ```bash
 npm run dev

@@ -2,12 +2,13 @@
 title: "Design"
 ---
 
-Use Dall-e model to create cretivity product design based on user's description.
+Use Dall-e model to create creativity design based on your description.
 
-There is a `Design` page (`apps\web\pages\design\Design.tsx`) on chatbot. The page has an input textbox for description, and a button to call AI Service and get back a generated image.
+There is a `Design` page located here (`apps\web\pages\design\Design.tsx`) on the website. The page has an input textbox for description, and a button to call AI Service and get back a generated image.
 
-Open above page in `VS Code` and replace the whole file with below code. 
+1- Navigate to the page via `Explorer` and click the file to open it in the editor.
 
+2- Replace all text in the file with below code. 
 
 ```
 
@@ -88,6 +89,6 @@ export default Page;
 
 ```
 
-Once copied, the web page in the browser should auto refresh, please test out the function!
+3- Once copied, the web page in the browser should auto refresh, please test out the function.
 
-Feel free to expand on it to make it more interesting!
+4- Feel free to expand on it to make it more interesting!

@@ -2,11 +2,13 @@
 title: "Vision"
 ---
 
-Leveraging GPT-4o's vision capabilities for accurate analysis and verification of product photos. Reduces processing time but also ensures consistency and reliability in decision-making, ultimately enhancing the customer experience​
+Leveraging GPT-4o's vision capabilities for accurate analysis and verification of product photos. 
 
-There is a `Vision` page (`apps\web\pages\vision\Vision.tsx`) on chatbot. The page has an image upload button to select a local image file, and a button to invoke AI Service and retrieve vision response.
+There is a `Vision` page located here (`apps\web\pages\vision\Vision.tsx`) on the website. The page has an image upload button to select a local image file, and a button to invoke AI Service and retrieve vision response.
 
-Open above page in `VS Code` and replace the whole file with below code. 
+1- Navigate to the page via `Explorer` and click the file to open it in the editor.
+
+2- Replace all text in the file with below code. 
 
 ```
 
@@ -140,6 +142,6 @@ export default Page;
 
 ```
 
-Once copied, the web page in the browser should auto refresh, please test out the function!
+3- Once copied, the web page in the browser should auto refresh, please test out the function.
 
-Feel free to expand on it to make it more interesting!
+4- Feel free to expand on it to make it more interesting!

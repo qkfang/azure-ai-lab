@@ -4,9 +4,11 @@ title: "SEO"
 
 Develop a feature to download a specific web page, convert html to text and summarise it.
 
-There is a `SEO` page (`apps\web\pages\seo\Seo.tsx`) on chatbot. The page has an input textbox for a url, and a button to invoke AI Service and get back a generated SEO content. use `http://localhost:4000/product.html` for testing.
+There is a `SEO` page located here (`apps\web\pages\seo\Seo.tsx`) on the website. The page has an input textbox for a url, and a button to invoke AI Service and get back a generated SEO content. Use `http://<codespaces_url>/product.html` for testing (replace <codespaces_url> with actual url of the codespaces website)
 
-Open above page in `VS Code` and replace the whole file with below code. 
+1- Navigate to the page via `Explorer` and click the file to open it in the editor.
+
+2- Replace all text in the file with below code. 
 
 ```
 
@@ -78,7 +80,7 @@ const Page = () => {
     return (
         <div className="pageContainer">
             <h2>SEO</h2>
-            <p>Sample product page is here: http://localhost:4000/product.html
+            <p>Sample product page is here: http://<codespaces_url>/product.html
             </p>
             <p>
                 <input type="text" placeholder="(enter url)" onChange={updateText} />
@@ -101,6 +103,6 @@ export default Page;
 
 ```
 
-Once copied, the web page in the browser should auto refresh, please test out the function!
+3- Once copied, the web page in the browser should auto refresh, please test out the function.
 
-Feel free to expand on it to make it more interesting!
+4- Feel free to expand on it to make it more interesting!
