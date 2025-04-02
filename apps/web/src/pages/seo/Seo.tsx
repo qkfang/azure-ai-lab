@@ -32,7 +32,7 @@ const Page = () => {
     return (
         <div className="pageContainer">
             <h2>SEO</h2>
-            <p>Sample product page is here: http://localhost:4000/product.html
+            <p>Sample product page is here: http://codespaces_url/product.html (replace <codespaces_url> with actual url of the codespaces website)
             </p>
             <p>
                 <input type="text" placeholder="(enter url)" onChange={updateText} />
